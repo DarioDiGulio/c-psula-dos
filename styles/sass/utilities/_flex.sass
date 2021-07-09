@@ -1,0 +1,7 @@
+@mixin center($multiline)
+    display: flex
+    justify-content: center
+    @if $multiline
+        align-content: center
+    @else 
+        align-items: center

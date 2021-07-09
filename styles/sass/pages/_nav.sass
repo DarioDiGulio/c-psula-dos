@@ -1,0 +1,18 @@
+@use '../utilities/vars'
+@use '../utilities/link'
+@use '../utilities/flex'
+
+.nav
+    background-color: vars.$black
+    @include flex.center(false)
+    justify-content: start
+
+
+    .nav__logo
+        margin: 10px
+        width: 3vw
+
+    @include link.format()
+
+    .nav__link
+        color: vars.$white

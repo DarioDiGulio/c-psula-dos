@@ -1,0 +1,48 @@
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap';
+.sectionCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  height: 100vh;
+  width: 100vw;
+}
+
+.nav {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+}
+.nav .nav__logo {
+  margin: 10px;
+  width: 3vw;
+}
+.nav a,
+.nav a:active,
+.nav a:visited,
+.nav a:focus {
+  cursor: pointer;
+  text-decoration: none;
+}
+.nav .nav__link {
+  color: #FFF;
+}
+
+.seeMoreContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seeMoreContainer .seeMore__img {
+  position: fixed;
+  bottom: 2vh;
+  width: 5vw;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
