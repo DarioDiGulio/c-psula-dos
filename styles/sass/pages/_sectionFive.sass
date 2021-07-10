@@ -1,0 +1,26 @@
+@use '../utils/vars' as *
+@use '../utils/flex'
+@use 'sass:map'
+
+.sectionFive
+  background-color: map.get($Colors, "blue")
+  color: map.get($Colors, "white")
+
+  .sectionFive__article
+    border: 1px solid map.get($Colors, "borderBlue")
+    border-radius: 5px
+    width: 45%
+    position: relative
+    display: flex
+    justify-content: space-around
+    height: 40vh
+
+  .--front
+    align-content: center
+    margin: auto
+    z-index: 1
+    top: -20%
+
+  .--left
+    align-content: start
+    margin-left: 10%

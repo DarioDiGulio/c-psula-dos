@@ -2,17 +2,16 @@
   "name": "Proyecto_base",
   "version": "1.0.0",
   "scripts": {
-    "dev": "concurrently \"npm run start\" \"npm run sass-watch-dev\"",
-    "start": "http-server -o",
+    "dev": "concurrently \"npm start\" \"npm run sass-watch-dev\"",
+    "start": "live-server -V --no-css-inject",
     "sass-watch-dev": "sass --watch -c --style=expanded --no-source-map styles/sass:styles/css",
     "sass-compile-dev": "sass -c --style=expanded --no-source-map styles/sass:styles/css",
     "sass-compile-prod": "sass --style=compressed styles/sass:dist/css"
   },
-  "dependencies": {
-    "concurrently": "^6.2.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "http-server": "^0.12.3",
+    "concurrently": "^6.2.0",
+    "live-server": "^1.2.1",
     "sass": "^1.35.2"
   }
 }

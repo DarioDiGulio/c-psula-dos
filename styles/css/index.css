@@ -28,18 +28,19 @@
 }
 .sectionOne .sectionOne__main .main__title,
 .sectionOne .sectionOne__other .main__title {
-  font-size: 3.75rem;
+  font-size: 3.125rem;
 }
 .sectionOne .sectionOne__main .main__content,
 .sectionOne .sectionOne__main .other__content,
 .sectionOne .sectionOne__other .main__content,
 .sectionOne .sectionOne__other .other__content {
-  font-size: 1.875rem;
+  font-size: large;
   text-align: center;
-  margin-bottom: 2em;
+  margin: 0 2em 2em 2em;
 }
 .sectionOne .other__icon {
   margin-bottom: 5em;
+  width: 80%;
 }
 
 .sectionThree {
@@ -49,8 +50,20 @@
   background-position: center;
 }
 .sectionThree .sectionThree__article {
-  background-image: url("../assets/pcVideo.svg");
-  background-position: center;
+  position: relative;
+}
+.sectionThree .sectionThree__article img {
+  width: 70%;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.sectionThree .sectionThree__article video {
+  position: relative;
+  width: 55%;
+  left: 50%;
+  top: -50%;
+  transform: translateX(-50%);
 }
 
 .sectionFour {
@@ -84,15 +97,39 @@
   padding: 3rem 0;
 }
 .sectionFour article.sectionFour__article p {
-  font-size: 1.875rem;
+  font-size: large;
   color: #FFF;
   padding: 0 14%;
   text-align: center;
   width: 50%;
   box-sizing: border-box;
 }
-.sectionFour article.sectionFour__article video {
+.sectionFour article.sectionFour__article video, .sectionFour article.sectionFour__article img {
   width: 50%;
+}
+
+.sectionFive {
+  background-color: #070F19;
+  color: #FFF;
+}
+.sectionFive .sectionFive__article {
+  border: 1px solid #0476F2;
+  border-radius: 5px;
+  width: 45%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  height: 40vh;
+}
+.sectionFive .--front {
+  align-content: center;
+  margin: auto;
+  z-index: 1;
+  top: -20%;
+}
+.sectionFive .--left {
+  align-content: start;
+  margin-left: 10%;
 }
 
 .nav {
