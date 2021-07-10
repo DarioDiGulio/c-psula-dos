@@ -1,0 +1,32 @@
+@use '../utils/flex'
+@use '../utils/vars' as *
+@use 'sass:map'
+
+.sectionOne
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  background-image: url("../assets/background1.svg")
+  background-color: map.get($Colors, "blue")
+
+  .sectionOne__main,
+  .sectionOne__other
+    @include flex.center()
+
+    margin: 2em 0
+    gap: 2rem
+    flex-direction: column
+    color: map.get($Colors, "white")
+
+    .main__title
+      font-size: map.get($Fonts, "title")
+
+    .main__content,
+    .other__content
+      font-size: map.get($Fonts, "content")
+      text-align: center
+      margin-bottom: 2em
+
+  .other__icon
+    margin-bottom: 5em
+

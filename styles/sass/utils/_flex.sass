@@ -1,0 +1,9 @@
+@mixin center()
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin halfColumn()
+    @include center()
+    flex-direction: row
+    justify-content: space-between

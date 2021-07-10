@@ -1,0 +1,37 @@
+@use '../utils/flex'
+@use '../utils/vars' as *
+@use 'sass:map'
+
+.sectionFour
+  @include flex.center()
+  flex-direction: column
+  background-color: map.get($Colors, "blue")
+
+  article.corned
+    width: 50%
+    height: 25%
+    .sectionFour__title
+      text-align: center
+      font-size: 3.125rem
+      color: map.get($Colors, "white")
+
+  article.sectionFour__article
+    @include flex.halfColumn()
+    width: 100%
+    background-image: url("../assets/redes.png")
+    background-repeat: no-repeat
+    background-position: left
+    background-size: inherit
+    margin: 3rem 0
+    padding: 3rem 0
+
+    p
+      font-size: map.get($Fonts, "content")
+      color: map.get($Colors, "white")
+      padding: 0 14%
+      text-align: center
+      width: 50%
+      box-sizing: border-box
+
+    video
+      width: 50%

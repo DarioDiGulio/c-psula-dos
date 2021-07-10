@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Proyecto Base</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">  
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles/css/normalize.css">
@@ -15,17 +15,64 @@
 </head>
 
 <body>
-    <header>
-        <nav class="nav">
-            <img src="./assets/logo.svg" alt="Logo link" class="nav__logo">
-            <a href="#" class="nav__link">Volver al LAB</a>
-        </nav>
-    </header>
-    <div class="seeMoreContainer">
-        <img src="./assets/seemore.svg" alt="Ver más" class="seeMore__img">
-    </div>
+<header class="section sectionOne">
+    <nav class="nav">
+        <img src="styles/assets/logo.svg" alt="Logo link" class="nav__logo">
+        <a href="#" class="nav__link">Volver al LAB</a>
+    </nav>
+    <section class="sectionOne__main corned">
+        <img src="styles/assets/mainIcon.svg" class="main__icon">
+        <h2 class="main__title">RPA</h2>
+        <p class="main__content">
+            La automatización robótica de procesos (RPA) que permite configurar
+            <br>
+            un software para automatizar tareas predecibles, medibles y configurables.
+        </p>
+    </section>
+    <section class="sectionOne__other">
+        <p class="other__content">
+            La automatización robótica de procesos (RPA) que permite configurar
+            <br>
+            un software para automatizar tareas predecibles, medibles y configurables.
+        </p>
+        <img src="styles/assets/hands.svg" class="other__icon" alt="hands">
+    </section>
+</header>
+<section class="section sectionCenter sectionThree">
+    <article class="sectionThree__article">
+        <video src="./styles/assets/form.mp4" autoplay muted loop>
+            Tu navegador no admite el elemento <code>video</code>.
+        </video>
+    </article>
+</section>
+<section class="section sectionFour">
+    <article class="corned">
+        <h2 class="sectionFour__title">Beneficios</h2>
+    </article>
+    <article class="sectionFour__article">
+        <video src="./styles/assets/teclado.mp4" autoplay muted loop>
+            Tu navegador no admite el elemento <code>video</code>.
+        </video>
+        <p>Disminución de costos y errores humanos</p>
+    </article>
+    <article class="sectionFour__article">
+        <p>Mayor velocidad y eficiencia</p>
+        <video src="./styles/assets/teclado2.mp4" autoplay muted loop>
+            Tu navegador no admite el elemento <code>video</code>.
+        </video>
+    </article>
+    <article class="sectionFour__article">
+        <img src="styles/assets/loading.png" alt="Loading">
+        <p>Escalabilidad de procesos</p>
+    </article>
+</section>
+<div class="seeMoreContainer">
+    <img src="styles/assets/seemore.svg" alt="Ver más" class="seeMore__img">
+</div>
 
-    <script src="./js/index.js"></script>
+<script src="./js/styles.js"></script>
+<script src="./js/animations.js"></script>
+<script src="./js/index.js"></script>
 </body>
 
 </html>

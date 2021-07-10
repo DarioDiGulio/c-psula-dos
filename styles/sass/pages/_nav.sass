@@ -1,18 +1,19 @@
-@use '../utilities/vars'
-@use '../utilities/link'
-@use '../utilities/flex'
+@use '../utils/vars' as *
+@use '../utils/link'
+@use '../utils/flex'
+@use 'sass:map'
 
 .nav
-    background-color: vars.$black
-    @include flex.center(false)
-    justify-content: start
+  @include flex.center()
+  @include link.format()
+
+  justify-content: start
+  padding-left: 15em
+
+  .nav__logo
+    margin: 10px
+    width: 3vw
 
 
-    .nav__logo
-        margin: 10px
-        width: 3vw
-
-    @include link.format()
-
-    .nav__link
-        color: vars.$white
+  .nav__link
+    color:  map.get($Colors, "white")

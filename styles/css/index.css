@@ -6,20 +6,101 @@
 }
 
 .section {
-  height: 100vh;
   width: 100vw;
 }
 
+.sectionOne {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../assets/background1.svg");
+  background-color: #070F19;
+}
+.sectionOne .sectionOne__main,
+.sectionOne .sectionOne__other {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0;
+  gap: 2rem;
+  flex-direction: column;
+  color: #FFF;
+}
+.sectionOne .sectionOne__main .main__title,
+.sectionOne .sectionOne__other .main__title {
+  font-size: 3.75rem;
+}
+.sectionOne .sectionOne__main .main__content,
+.sectionOne .sectionOne__main .other__content,
+.sectionOne .sectionOne__other .main__content,
+.sectionOne .sectionOne__other .other__content {
+  font-size: 1.875rem;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.sectionOne .other__icon {
+  margin-bottom: 5em;
+}
+
+.sectionThree {
+  background-image: url("../assets/tram.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sectionThree .sectionThree__article {
+  background-image: url("../assets/pcVideo.svg");
+  background-position: center;
+}
+
+.sectionFour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #070F19;
+}
+.sectionFour article.corned {
+  width: 50%;
+  height: 25%;
+}
+.sectionFour article.corned .sectionFour__title {
+  text-align: center;
+  font-size: 3.125rem;
+  color: #FFF;
+}
+.sectionFour article.sectionFour__article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-image: url("../assets/redes.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: inherit;
+  margin: 3rem 0;
+  padding: 3rem 0;
+}
+.sectionFour article.sectionFour__article p {
+  font-size: 1.875rem;
+  color: #FFF;
+  padding: 0 14%;
+  text-align: center;
+  width: 50%;
+  box-sizing: border-box;
+}
+.sectionFour article.sectionFour__article video {
+  width: 50%;
+}
+
 .nav {
-  background-color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: start;
-}
-.nav .nav__logo {
-  margin: 10px;
-  width: 3vw;
+  padding-left: 15em;
 }
 .nav a,
 .nav a:active,
@@ -27,6 +108,10 @@
 .nav a:focus {
   cursor: pointer;
   text-decoration: none;
+}
+.nav .nav__logo {
+  margin: 10px;
+  width: 3vw;
 }
 .nav .nav__link {
   color: #FFF;
